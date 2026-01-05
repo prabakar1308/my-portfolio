@@ -8,23 +8,23 @@ const categoryConfig = {
   frontend: {
     title: 'Frontend Technologies',
     icon: Code,
-    color: 'from-blue-500 to-cyan-500'
+    color: 'from-blue-500 to-cyan-500',
   },
   backend: {
     title: 'Backend Technologies',
     icon: Database,
-    color: 'from-green-500 to-emerald-500'
+    color: 'from-green-500 to-emerald-500',
   },
   tools: {
     title: 'Tools & Platforms',
     icon: Settings,
-    color: 'from-purple-500 to-pink-500'
+    color: 'from-purple-500 to-pink-500',
   },
   ai: {
     title: 'AI Skills',
     icon: Code, // You can replace this with a more relevant icon if available
     color: 'from-indigo-500 to-purple-500',
-  }
+  },
 } as const;
 
 export default function Skills(props: SkillsProps): JSX.Element {
@@ -33,10 +33,10 @@ export default function Skills(props: SkillsProps): JSX.Element {
   const toolsSkills = getSkillsByCategory('tools');
 
   const aiSkills = [
-    { name: 'Langchain', proficiency: 90 },
-    { name: 'Langgraph', proficiency: 85 },
-    { name: 'MCP', proficiency: 80 },
-    { name: 'RAG', proficiency: 75 },
+    { name: 'Langchain', proficiency: 60 },
+    { name: 'Langgraph', proficiency: 60 },
+    { name: 'MCP', proficiency: 50 },
+    { name: 'RAG', proficiency: 60 },
   ];
 
   const skillCategories = [
@@ -52,12 +52,12 @@ export default function Skills(props: SkillsProps): JSX.Element {
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
           Technical <span className="gradient-text">Skills</span>
         </h2>
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {skillCategories.map((category) => {
             const config = categoryConfig[category.type];
             const IconComponent = config.icon;
-            
+
             return (
               <div
                 key={category.type}
@@ -67,11 +67,9 @@ export default function Skills(props: SkillsProps): JSX.Element {
                   <div className={`p-2 rounded-lg bg-gradient-to-r ${config.color}`}>
                     <IconComponent size={24} className="text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900">
-                    {config.title}
-                  </h3>
+                  <h3 className="text-xl font-bold text-gray-900">{config.title}</h3>
                 </div>
-                
+
                 <div className="space-y-4">
                   {category.skills.map((skill) => (
                     <div key={skill.name} className="space-y-2">
