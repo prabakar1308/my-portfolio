@@ -19,6 +19,11 @@ const categoryConfig = {
     title: 'Tools & Platforms',
     icon: Settings,
     color: 'from-purple-500 to-pink-500'
+  },
+  ai: {
+    title: 'AI Skills',
+    icon: Code, // You can replace this with a more relevant icon if available
+    color: 'from-indigo-500 to-purple-500',
   }
 } as const;
 
@@ -27,10 +32,18 @@ export default function Skills(props: SkillsProps): JSX.Element {
   const backendSkills = getSkillsByCategory('backend');
   const toolsSkills = getSkillsByCategory('tools');
 
+  const aiSkills = [
+    { name: 'Langchain', proficiency: 90 },
+    { name: 'Langgraph', proficiency: 85 },
+    { name: 'MCP', proficiency: 80 },
+    { name: 'RAG', proficiency: 75 },
+  ];
+
   const skillCategories = [
     { type: 'frontend' as const, skills: frontendSkills },
     { type: 'backend' as const, skills: backendSkills },
     { type: 'tools' as const, skills: toolsSkills },
+    { type: 'ai' as const, skills: aiSkills },
   ];
 
   return (

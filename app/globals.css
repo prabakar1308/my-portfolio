@@ -22,6 +22,10 @@
   .section-padding {
     @apply py-12 px-4 sm:px-6 lg:px-8;
   }
+
+  .header-wrapper {
+    background: linear-gradient(90deg, #083253 17%, #aa1450)
+  }
   
   .container-custom {
     @apply max-w-7xl mx-auto;

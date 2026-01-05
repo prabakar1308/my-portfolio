@@ -11,15 +11,15 @@ import {
 
 export const personalInfo: PersonalInfo = {
   name: 'Prabakaran Arumugam',
-  title: 'Full Stack Lead Consultant & Developer',
+  title: 'Full Stack + AI',
   profile:
-    'Solution-oriented software professional offering technical proficiency and extensive practical skills achieved with 12+ years of progressive career in implementing development and enhancement projects in the domain of Energy & Media industry.',
+    'Solution-oriented Full Stack Developer with 12+ years of experience and hands-on expertise in building Agentic AI solutions, RAG pipelines, and intelligent automation systems using modern LLM frameworks.',
   contact: {
     phone: '+91 9500107044',
     email: 'prabakar1389@gmail.com',
     location: 'Chennai, Tamilnadu, India',
-    linkedin: 'https://linkedin.com/in/prabakaran-arumugam',
-    github: 'https://github.com/prabakaran-arumugam',
+    linkedin: 'https://www.linkedin.com/in/prabakaran-arumugam-4b8b90172/',
+    github: 'https://github.com/prabakar1308',
   },
 };
 
@@ -47,6 +47,10 @@ export const technicalSkills: Skill[] = [
   { name: 'ESLint & Prettier', category: 'tools', proficiency: 80 },
   { name: 'Nest JS', category: 'backend', proficiency: 70 },
   { name: 'PostgreSQL', category: 'backend', proficiency: 60 },
+  { name: 'Java', category: 'backend', proficiency: 70 },
+  { name: 'Spring Boot', category: 'backend', proficiency: 70 },
+  { name: 'Web Logic', category: 'backend', proficiency: 60 },
+  { name: 'Oracle', category: 'backend', proficiency: 50 },
   { name: 'Next JS', category: 'frontend', proficiency: 30 },
   { name: 'Agile Methodology', category: 'tools', proficiency: 85 },
   { name: 'GitHub', category: 'tools', proficiency: 80 },
@@ -54,6 +58,8 @@ export const technicalSkills: Skill[] = [
   { name: 'GitHub Co-pilot', category: 'tools', proficiency: 80 },
   { name: 'Hostinger VPS', category: 'tools', proficiency: 75 },
   { name: 'Google Cloud', category: 'tools', proficiency: 30 },
+  { name: 'VS Code', category: 'tools', proficiency: 90 },
+  { name: 'Google Antigravity', category: 'tools', proficiency: 50 },
 ];
 
 export const softSkills: string[] = [
@@ -90,8 +96,16 @@ export const workExperience: WorkExperience[] = [
       'Foster a collaborative and results-driven work environment',
       'Technical architecture and implementation',
       'Client stakeholder management and requirement analysis',
+      'Exploring and implementing AI agents to enhance application capabilities',
     ],
-    techStack: ['Angular', 'React', 'Node.js', 'Nest JS', 'PostgreSQL'],
+    techStack: [
+      'Angular',
+      'React',
+      'Node.js',
+      'Nest JS',
+      'PostgreSQL',
+      'AI Agents (LLM powered along with Langchain, Langgraph, MCP & RAG)',
+    ],
   },
   {
     company: 'Mindtree',
@@ -106,7 +120,16 @@ export const workExperience: WorkExperience[] = [
       'Client Interaction and requirement analysis',
       'Technical guidance and architecture decisions',
     ],
-    techStack: ['Angular', 'Angular Material', 'NgRx', 'TypeScript'],
+    techStack: [
+      'Angular',
+      'Angular Material',
+      'NgRx',
+      'TypeScript',
+      'JAVA',
+      'Spring Boot',
+      'Web Logic',
+      'JUnit',
+    ],
   },
   {
     company: 'Mindtree',
@@ -162,7 +185,7 @@ export const portfolioData: PortfolioData = {
 export const getTotalExperience = (): number => {
   const startYear = 2013;
   const currentYear = new Date().getFullYear();
-  return currentYear - startYear;
+  return currentYear - startYear - 1;
 };
 
 export const getSkillsByCategory = (category: Skill['category']): Skill[] => {
