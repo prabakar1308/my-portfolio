@@ -15,7 +15,7 @@ export default function Header(): JSX.Element {
           <div className="mb-6">
             <div className="w-24 h-24 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold border-4 border-white/20 overflow-hidden">
               <img
-                src="/profile_pic.jpeg" // Path to the profile picture in the public folder
+                src="/profile.png" // Path to the profile picture in the public folder
                 alt="Profile Picture"
                 className="w-full h-full object-cover"
               />
